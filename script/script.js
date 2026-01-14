@@ -28,7 +28,7 @@ function handleNavbarCollapse() {
 // Génération des compétences (Skills)
 function createSkillsFromJSON() {
     const container = document.getElementById("skills-container");
-    fetch("../data/skills.json")
+    fetch("./data/skills.json")
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {

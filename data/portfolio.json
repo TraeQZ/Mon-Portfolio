@@ -1,0 +1,42 @@
+[
+    {
+        "image": "image1.webp",
+        "title": "Booki",
+        "text": "J'ai développé ce site à partir d'une maquette Figma en exploitant la puissance de Flexbox pour une mise en page adaptative. Pour garantir une qualité optimale, j'ai assuré la conformité aux normes W3C, offrant ainsi une expérience utilisateur fluide et standardisée.",
+        "link": "#"
+    },
+    {
+        "image": "Print-it.webp",
+        "title": "Print-it",
+        "text": "L'implémentation de ce carrousel dynamique m'a permis d'allier logique algorithmique et bonnes pratiques de développement.",
+        "link": "#"
+    },
+    {
+        "image": "image3.webp",
+        "title": "Kasa",
+        "text": "J'ai réalisé la refonte intégrale d'une plateforme de location immobilière en utilisant React. J'ai développé des composants dynamiques, tels qu'un carrousel d'images et des menus rétractables (collapses), afin d'optimiser l'ergonomie et l'interactivité de l'interface.",
+        "link": "https://traeqz.github.io/kasa-immo/"
+    },
+    {
+        "image": "Sophie-Bluel.webp",
+        "title": "sophie Bluel",
+        "text": "Développement d’un site portfolio dynamique en JavaScript Vanilla. J'ai implémenté la communication avec une API REST pour la gestion des données (affichage, ajout et suppression de projets) et conçu une interface d'administration sécurisée avec manipulation du DOM et fenêtres modales.",
+        "link": "https://github.com/sanasla/Projet-7-Sophie-Bluel",
+        "alt": "Image de couverture du site Sophie"
+    },
+    {
+        "image": "Menu-Maker.webp",
+        "title": "Menu Maker",
+        "text": "Conception et planification technique : de la rédaction des spécifications à la gestion du workflow sous Notion. Ma pratique de la veille technologique me permet de proposer des solutions modernes et efficaces, parfaitement alignées avec les attentes des utilisateurs.",
+        "alt": "Image de couverture du site Menu Maker"
+    },
+    {
+        "image": "debugging (2).webp",
+        "title": "724 events",
+        "link": null,
+        "text": "Responsable de l'assurance qualité, j'ai piloté des tests manuels et exploratoires pour identifier et corriger les anomalies en amont de la mise en production. La conception d'un cahier de recettes et de bilans détaillés a permis de garantir la conformité technique et la stabilité du projet.",
+        "alt": "Image de couverture du site 724 events"
+        
+       
+    }
+]

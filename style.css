@@ -1,0 +1,214 @@
+/* Palette et styles généraux */
+:root {
+    --bordeaux: #721021;
+    --noir: #1a1a1a;
+    --blanc: #ffffff;
+}
+
+/* Navbar fond au scroll */
+.navbar.navbarDark {
+    background-color: var(--noir) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
+}
+.navbar {
+    background-color: var(--noir) !important; /* Garde le fond noir que tu avais choisi */
+    padding: 10px 0;
+}
+/******* STYLE TEXTE PRÉSENTATION *******/
+.title-position {
+    margin-top: 90px;
+    padding-left: 5px;
+}
+
+.title-position h1 {
+    font-size: 2.2rem;     /* Taille plus petite (auparavant 3.5rem) */
+    text-align: left;      /* Force l'alignement à gauche */
+    font-weight: 500;
+    margin-left: 0;        /* S'assure qu'il n'y a pas de marge résiduelle */
+}
+/* Le titre "À propos" avec une petite barre bordeaux discrète */
+.about-section h2::after {
+    content: '';
+    display: block;
+    width: 250px;
+    height: 3px;
+    background-color: var(--bordeaux);
+    margin-top: 10px;
+}
+
+/* Texte d'introduction (le premier paragraphe) */
+.about-section .lead {
+    font-size: 1.25rem;
+    color: var(--noir);
+    border-left: 4px solid var(--bordeaux);
+    padding-left: 20px;
+}
+
+/* Deuxième paragraphe plus aéré */
+.description-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Mise en avant subtile */
+.highlight {
+    color: var(--bordeaux);
+    font-weight: 600;
+}
+
+
+
+.imageAboutPage:hover {
+    transform: scale(1.05); /* Petit effet de zoom élégant au survol */
+}
+
+/* Espacement sur grand écran */
+@media (min-width: 992px) {
+    .about-section {
+        padding-left: 60px;
+    }
+}
+/* On retire les animations complexes qui peuvent gêner sur mobile */
+.navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+}
+.imageAboutPage {
+    width: 100%;
+    max-width: 300px; /* Réduit la taille pour ne plus manger le texte */
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 15px 15px 0px var(--bordeaux);
+    margin: 20px auto; /* Centre l'image si besoin */
+    display: block;
+}
+
+/* Style spécifique pour tes boutons */
+.btn-bordeaux {
+    background-color: var(--bordeaux);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-bordeaux:hover {
+    background-color: var(--noir);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Homogénéisation des cartes Portfolio */
+.portfolioContent {
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.portfolioContent:hover {
+    transform: translateY(-10px);
+}
+
+.card-title {
+    color: var(--noir);
+    margin-bottom: 1rem;
+}
+
+/* Pour le texte des cartes : limite à 4 lignes pour garder l'alignement parfait */
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Pour Chrome, Safari, Edge */
+    line-clamp: 4;         /* Propriété standard (pour le futur) */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Contact Icons animation */
+.contactColumn a {
+    color: var(--noir);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contactColumn a:hover {
+    color: var(--bordeaux) !important;
+    transform: scale(1.2);
+}
+/* Garde tes styles précédents intacts pour la bannière et le header */
+
+/* AJOUTE SEULEMENT CECI POUR L'HOMOGÉNÉITÉ DU BAS : */
+
+/* 1. Aligne toutes les images du portfolio sans les déformer */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* 2. Force les cartes à être de même hauteur sur une ligne */
+.portfolioContent.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* 3. Limite le texte pour éviter les décalages trop grands */
+.portfolioContent .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Pour Chrome, Safari et Edge */
+    line-clamp: 4;         /* Propriété standard pour la compatibilité future */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+/* 4. Ton bouton bordeaux personnalisé pour le portfolio si tu le souhaites */
+.btn-dark {
+    background-color: var(--noir);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: var(--bordeaux);
+}
+/******* FOOTER *******/
+footer {
+    background-color: var(--noir);
+    color: var(--blanc);
+    padding: 60px 0 40px 0; /* Plus d'espace pour respirer */
+    text-align: center;
+    border-top: 5px solid var(--bordeaux); /* Rappel de ta couleur principale */
+}
+
+.footer-name {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.footer-tagline {
+    color: var(--bordeaux);
+    font-weight: 500;
+}
+
+.footer-divider {
+    width: 50px;
+    height: 2px;
+    background-color: var(--bordeaux);
+    margin: 0 auto 20px auto;
+    opacity: 0.7;
+}
+
+.footer-subtext {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 15px;
+}
+
+/* Animation discrète au survol */
+footer p:hover {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s ease;
+}

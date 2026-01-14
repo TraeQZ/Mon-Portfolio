@@ -26,18 +26,20 @@ function handleNavbarCollapse() {
 }
 
 // Génération des compétences (Skills)
+// Génération des compétences (Skills)
 function createSkillsFromJSON() {
     const container = document.getElementById("skills-container");
-    fetch("./data/skills.json")
+    fetch("./data/skills.json") // On garde le ./ ici car c'est correct
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {
                 const card = document.createElement("div");
                 card.className = "col-lg-4 mt-4";
+                // CORRECTION ICI : on retire le ../ devant images
                 card.innerHTML = `
                     <div class="card skillsText h-100">
                         <div class="card-body text-center">
-                            <img src="../images/${item.image}" 
+                            <img src="images/${item.image}" 
                                  alt="Logo ${item.title}"
                                  style="height: 50px; margin-bottom: 10px; object-fit: contain;" />
                             <h3 class="card-title">${item.title}</h3>
